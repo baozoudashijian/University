@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas</title>
+</head>
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		background: #000;
+	}
+	canvas {
+		display: block;
+	}
+</style>
+<body>
+	<canvas id="canvas"></canvas>
+	<script type="text/javascript">
+		// 获得canvas标签
+		var canvas = document.getElementById('canvas');
+		// 将画布的宽和高设置的和浏览器的可视窗口大小一样大
+		w = canvas.width = window.innerWidth;
+		h = canvas.height = window.innerHeight;
+		// 声明x，和y变量通过setinterval来不断改变位置
+		var x=100, y=100;
+		// 开启定时器
+		setInterval(function(){
+			// 不停的改变x，和y的位置
+			x ++;
+			y ++;
+			// 设置画布的维数，2维=2d，3维=webgl；
+			var ctx = canvas.getContext('2d');
+			// 清除画布上的东西从00坐标到wh左上角到右下角
+			ctx.clearRect(0,0,w,h);
+			// 仅有上面的清除没有用，还要加上这个
+			ctx.beginPath();
+			// 这是画一个圆，xy表示圆心的位置，10表示半径，0不知道表示什么，
+			ctx.arc(x,y,10,0,Math.PI*2,false);
+			// 填充and填充的颜色
+			ctx.fillStyle = "red";
+			// 填充
+			ctx.fill();
+		},100)
+
+	</script>
+</body>
+</html>
