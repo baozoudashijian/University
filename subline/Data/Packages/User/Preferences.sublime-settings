@@ -1,0 +1,11 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Eiffel.tmTheme",
+	"font_size": 19.0,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Soda Dark 3.sublime-theme",
+	"update_check": false,
+	"word_wrap": "auto"
+}

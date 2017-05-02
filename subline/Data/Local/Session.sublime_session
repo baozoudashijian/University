@@ -1,0 +1,559 @@
+{
+	"folder_history":
+	[
+	],
+	"last_version": 3126,
+	"last_window_id": 1,
+	"log_indexing": false,
+	"settings":
+	{
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"fill",
+						"fillStyle"
+					],
+					[
+						"inner",
+						"innerHeight"
+					],
+					[
+						"for",
+						"for"
+					],
+					[
+						"POST",
+						"_POST"
+					],
+					[
+						"j",
+						"json_encode"
+					],
+					[
+						"ajax",
+						"ajaxForm"
+					],
+					[
+						"json",
+						"json"
+					],
+					[
+						"data",
+						"data"
+					],
+					[
+						"va",
+						"val"
+					],
+					[
+						"form",
+						"formData"
+					],
+					[
+						"console",
+						"console.log"
+					],
+					[
+						"ty",
+						"type=button"
+					],
+					[
+						"file_",
+						"file_get_contents"
+					],
+					[
+						"on",
+						"onclick"
+					],
+					[
+						"naem",
+						"name"
+					],
+					[
+						"age",
+						"ageText"
+					],
+					[
+						"alb",
+						"albumText"
+					],
+					[
+						"html",
+						"html"
+					],
+					[
+						"al",
+						"album"
+					],
+					[
+						"response",
+						"responseXML"
+					],
+					[
+						"XML",
+						"XMLHttpRequest"
+					],
+					[
+						"x",
+						"xml"
+					],
+					[
+						"tyep",
+						"type=text"
+					],
+					[
+						"GET",
+						"_GET"
+					],
+					[
+						"head",
+						"header"
+					],
+					[
+						"na",
+						"name=itcast&age=10"
+					],
+					[
+						"class",
+						"class\tAttr"
+					],
+					[
+						"res",
+						"result"
+					],
+					[
+						"xhr",
+						"xhr"
+					],
+					[
+						"PO",
+						"_POST"
+					],
+					[
+						"docue",
+						"document.querySelector('.result').innerHTML"
+					],
+					[
+						"name",
+						"name"
+					],
+					[
+						"document",
+						"document.querySelector('.result').innerHTML"
+					],
+					[
+						"请求",
+						"请求主体"
+					],
+					[
+						"get",
+						"get"
+					],
+					[
+						"s",
+						"status"
+					],
+					[
+						"a",
+						"array"
+					],
+					[
+						"cha",
+						"charset=utf-8"
+					],
+					[
+						"sub",
+						"submit"
+					],
+					[
+						"pass",
+						"password"
+					],
+					[
+						"tex",
+						"text-indent"
+					],
+					[
+						"border",
+						"border"
+					],
+					[
+						"echo",
+						"echo"
+					],
+					[
+						"aray",
+						"array"
+					],
+					[
+						"arra",
+						"array"
+					],
+					[
+						"arr",
+						"arr"
+					],
+					[
+						"foreach",
+						"foreach"
+					],
+					[
+						"array",
+						"array"
+					],
+					[
+						"ar",
+						"array"
+					],
+					[
+						"print",
+						"print_r"
+					],
+					[
+						"mar",
+						"margin"
+					]
+				]
+			},
+			"buffers":
+			[
+				{
+					"file": "/F/hskey/canvas绘制/index.html",
+					"settings":
+					{
+						"buffer_size": 928,
+						"encoding": "UTF-8",
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/F/hskey/canvas绘制2/index.html",
+					"settings":
+					{
+						"buffer_size": 1610,
+						"encoding": "UTF-8",
+						"line_ending": "Windows"
+					}
+				}
+			],
+			"build_system": "",
+			"build_system_choices":
+			[
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 375.0,
+				"last_filter": "in",
+				"selected_items":
+				[
+					[
+						"in",
+						"Package Control: Install Package→安装插件"
+					],
+					[
+						"i",
+						"Package Control: Install Package→安装插件"
+					]
+				],
+				"width": 594.0
+			},
+			"console":
+			{
+				"height": 146.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/D/touch.html",
+				"/F/JavaScript代码段/01.html",
+				"/E/wamp/www/ajax-thrid/submit.html",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day03/code/04 jQuery Ajax/register.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day03/code/04 jQuery Ajax/register.html",
+				"/F/demo/index.html",
+				"/F/这是我创建的文件夹/index.html",
+				"/F/我创建的第二个文件夹/index.html",
+				"/C/Users/Adminstor/Desktop/angular-1.4.0-beta.5/angular.js",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/2.JS基础与特效/01 前端基本功-js 第11天/案例/09 点击空白处隐藏.html",
+				"/D/btts_10_su/index.html",
+				"/E/wamp/www/ajax-thrid/submit.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day03/code/04 jQuery Ajax/jquery.html",
+				"/E/wamp/www/ajax-thrid/03.php",
+				"/E/wamp/www/ajax-thrid/03.json",
+				"/E/wamp/www/ajax-thrid/03.html",
+				"/E/wamp/www/ajax-thrid/02.json",
+				"/E/wamp/www/ajax-thrid/02.html",
+				"/E/wamp/www/ajax-thrid/02.php",
+				"/D/code/content.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day03/code/04 jQuery Ajax/jquery.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day03/code/02 JSON/stars.json",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day03/code/02 JSON/stars.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day03/code/02 JSON/index.html",
+				"/E/wamp/www/ajax-thrid/01.xml",
+				"/E/wamp/www/ajax-second/ajax05.html",
+				"/E/wamp/www/ajax-second/05.php",
+				"/E/wamp/www/ajax-thrid/01.php",
+				"/E/wamp/www/ajax-thrid/01.html",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day03/code/01 XML/stars.xml",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day03/code/01 XML/index.html",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day03/code/01 XML/stars.php",
+				"/E/wamp/www/ajax-second/ajax03.html",
+				"/E/wamp/www/ajax-second/03.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day02/code/02 XMLHttpRequest/05.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day02/code/02 XMLHttpRequest/05.html",
+				"/E/wamp/www/ajax-second/ajax04.html",
+				"/E/wamp/www/ajax-second/04.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day02/code/02 XMLHttpRequest/04.html",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day02/code/02 XMLHttpRequest/04.php",
+				"/E/wamp/www/ajax-second/02.php",
+				"/E/wamp/www/ajax-second/ajax02.html",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day02/code/02 XMLHttpRequest/03.html",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day02/code/02 XMLHttpRequest/03.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day02/code/02 XMLHttpRequest/02.html",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day02/code/02 XMLHttpRequest/02.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day02/code/02 XMLHttpRequest/01.html",
+				"/E/wamp/www/ajax-second/ajax01.html",
+				"/E/wamp/www/ajax-second/01.php",
+				"/E/wamp/www/php/ajax第二天/ajax01.html",
+				"/E/wamp/www/php/ajax第二天/01.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day02/code/02 XMLHttpRequest/01.php",
+				"/E/wamp/www/php/test08.php",
+				"/E/wamp/www/php/text08.html",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day02/code/01 HTTP/login.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day02/code/01 HTTP/index.html",
+				"/E/wamp/www/php/test07.php",
+				"/E/wamp/www/php/test06.php",
+				"/E/wamp/www/php/test05.php",
+				"/E/wamp/www/php/test04.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day01/code/login.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day01/code/10.html",
+				"/E/wamp/www/php/text08.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day01/code/11.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day01/code/08.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day01/code/09.php",
+				"/E/wamp/www/php/test03.php",
+				"/E/wamp/www/php/test02.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day01/code/07.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day01/code/06.php",
+				"/E/wamp/www/test01.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day01/code/04.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day01/code/05.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day01/code/03.php",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/5.ajax/day01/code/02.php",
+				"/C/Windows/System32/drivers/etc/hosts",
+				"/E/wamp/bin/apache/Apache2.2.21/conf/extra/httpd-vhosts.conf",
+				"/E/wamp/www/index.php",
+				"/E/wamp/bin/apache/Apache2.2.21/conf/httpd.conf",
+				"/D/BaiduYunDownload/2016年最新3期 完整web移动前端工程师教程/2.JS基础与特效/01 前端基本功-js 第12天/案例/05 网易轮播图/js/slider.js",
+				"/F/Subline/JS第十一天/清除定时器.html",
+				"/C/Users/Adminstor/Desktop/demo.html",
+				"/F/潭州教育/2016-12-31/index.html"
+			],
+			"find":
+			{
+				"height": 37.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"directory"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"selected": 1,
+					"sheets":
+					[
+						{
+							"buffer": 0,
+							"file": "/F/hskey/canvas绘制/index.html",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 928,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										852,
+										852
+									]
+								],
+								"settings":
+								{
+									"origin_encoding": "UTF-8",
+									"syntax": "Packages/HTML/HTML.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/F/hskey/canvas绘制2/index.html",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 1610,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										774,
+										774
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/HTML/HTML.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 783.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 0,
+							"type": "text"
+						}
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 37.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "",
+			"position": "0,2,3,-1,-1,-1,-1,627,51,28,1010",
+			"project": "",
+			"replace":
+			{
+				"height": 70.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": false,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+			},
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}
