@@ -1,0 +1,119 @@
+body {
+	font-size: 16px;
+	line-height: 35px;
+	background: #339966;
+}
+/*第一部分*/
+.row-pad {
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+.clr-white {
+	color: purple;
+}
+.main-img {
+	max-height: 550px;
+	margin-top: 50px;
+}
+h1 {
+	padding-top: 50px;
+	font-family: 'Yellowtail', cursie;
+	padding-bottom: 20px;
+}
+.icon-round {
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border: 2px solid #FFFFFF;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 5px;
+}
+.apic {
+	max-height: 50px;
+	border: 2px solid #FFFFFF;
+	margin: 5px;
+}
+.nav-color {
+	background: #222222;
+}
+/*第二部分*/
+#dev-sec {
+	background: white;
+	padding-bottom: 50px;
+}
+.img-circle {
+	border-radius: 50%;
+}
+.developer-img {
+	border: 5px solid #339966;
+	max-height: 120px;
+	margin: 20px;
+}
+/*第三部分*/
+#stars {
+	padding-bottom: 30px;
+	color: white;
+}
+/*第四部分*/
+.about-sec {
+	background: #FFFFFF;
+	padding-bottom: 50px;
+}
+.testimonial {
+	border: 1px solid #339966;
+	width: 100%;
+	height: auto;
+	padding: 15px;
+	border-radius: 5px;
+	position: relative;
+}
+.testimonial::after {
+	content: "";
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	bottom: -28px;
+	left: 10%;
+	background: url(../img/cart.png) no-repeat;
+}
+.testimonial-name {
+	margin-top: 30px;
+	margin-left: 60px;
+}
+/*第五部分*/
+.price-sec {
+	color: #FFFFFF;
+	padding-bottom: 80px;
+}
+.price-div {
+	width: 200px;
+	height: 200px;
+	padding: 10px;
+	border: 5px solid #FFFFFF;
+	padding-top: 50px;
+	border-radius: 50%;
+	text-align: center;
+	margin: 3px;
+}
+.price-div span {
+	font-size: 50px;
+	display: block;
+}
+.price-div small {
+	display: block;
+}
+/*第六部分*/
+#contact-sec {
+	background: #FFFFFF;
+	padding-bottom: 50px;
+}
+/*第七部分*/
+#footer {
+	padding: 15px;
+	color: #FFFFFF;
+	text-align: center;
+}
