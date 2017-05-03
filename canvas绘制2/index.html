@@ -7,7 +7,7 @@
 		body {
 			margin: 0;
 			padding: 0;
-			background: #000;
+			background: #fff;
 		}
 		canvas {
 			display: block;
@@ -32,13 +32,14 @@
 			this.vx = Math.random()*20-10;
 			this.vy = Math.random()*20-10;
 			this.r = Math.random()*20+20;
+			this.color = "rgb("+parseInt(Math.random()*255-10)+","+parseInt(Math.random()*255-10)+","+parseInt(Math.random()*255-10)+")";
 			// this.color = "red";
+			// rgb(255,255,255)
 		}
 		var counts = [];
 		for (var i=0; i<50; i++){
 			counts.push(new Circle())
 		}
-
 		function draw(){
 			ctx.globalCompositeOperation = "source-over";
 			ctx.fillStyle = "rgba(0,0,0,0.3)"
@@ -48,12 +49,12 @@
 				var c = counts[i];
 				var color = ctx.createRadialGradient(c.x,c.y,c.r,c.x,c.y,c.r);
 				color.addColorStop(0,"#fff");
-				color.addColorStop(0.4,"purple");
-				color.addColorStop(0.4,"green");
-				color.addColorStop(1,"green");
+				color.addColorStop(0.4,"#fff");
+				color.addColorStop(0.4,c.color);
+				color.addColorStop(1,"#000");
 				ctx.beginPath();
 				ctx.arc(c.x,c.y,c.r,0,Math.PI*2,false);
-				ctx.fillStyle = "red";
+				ctx.fillStyle = c.color;
 				ctx.fill();
 				c.x += c.vx;
 				c.y += c.vy;
