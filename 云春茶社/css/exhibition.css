@@ -1,0 +1,157 @@
+.exhibition {
+	display: flex;
+	flex-wrap: wrap;
+}
+/*产品中心展示部分*/
+.exhibition .error {
+	margin: 200px auto;
+	font-size: 40px;
+	padding-left: 32px;
+	padding-right: 32px;
+	background: white;
+}
+.exhibition .error i {
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
+}
+.exhibition li {
+	width: 496px;
+	height: auto;
+	background: white;
+	align-content: flex-start;
+	padding: 0 16px;
+	margin-bottom: 30px;
+	position: relative;
+}
+.exhibition li::before {
+	content: "";
+	width: 0;
+	height: 3px;
+	position: absolute;
+	bottom: 0;
+	background: pink;
+	transition: width 0.5s;
+}
+.exhibition li:hover::before {
+	width: 100%;
+}
+.exhibition li img {
+	transition: all 1s;
+}
+.exhibition li:hover img{
+	transform: scale(1.05);
+}
+li .pic {
+	width: 446px;
+	height: 297px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+li .price {
+	width: 340px;
+	height: 77px;
+	margin: 0 auto;
+	padding: 10px 0;
+	text-align: center;
+}
+.price p {
+	color: #c00;
+}
+.price p span {
+	color: #CCCCCC;
+}
+.price a {
+	color: #000000;
+	font-size: 24px;
+}
+/*flag展示部分*/
+.exhibition .flag {
+	width: 1170px;
+	height: 252px;
+	margin: 200px auto;
+	margin-bottom: 0;
+	transition: all 1s;
+	cursor: pointer;
+}
+/*flag二级子页面展示部分*/
+.test {
+	width: 100%;
+	height: 800px;
+	position: relative;
+}
+.vaction {
+	position: absolute;
+	top: 215px;
+	left: 340px;
+	width: 1200px;
+	height: 286px;
+	margin: 0 auto;
+	background: white;
+	border-radius: 5px;
+}
+.vaction-home {
+	text-align: center;
+}
+.vaction-text {
+	text-align: center;
+	border-bottom: 1px solid #CCCCCC;
+}
+.exhibition .flag:hover {
+	box-shadow: 0 30px 40px rgba(0, 0, 0, .2);
+}
+/*coperation展示部分*/
+.exhibition .coperation {
+	width: 370px;
+	height: 284px;
+	margin: 120px auto;
+	position: relative;
+	text-align: center;
+	line-height: 40px;
+	overflow: hidden;
+	color: white;
+}
+.exhibition .coperation:hover::before {
+	bottom: 0;
+}
+.exhibition .coperation::before {
+	content: attr(data-content);/*此处运用h5中的自定义属性，然后通过content（data-content）*/
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	background: #677a0f;
+	opacity: 0.6;
+	transition: all 1s;
+	z-index: 999;
+}
+/*coperation二级子页面展示部分*/
+.testcoperation {
+	top: -100px;
+}
+.coperationbox {
+	width:1200px;
+	height: 661px;
+	padding: 0 50px;
+}
+.coperationbox h3 {
+	text-align: center;
+}
+.coperationbox .date {
+	text-align: center;
+}
+.coperationbox .wenzi {
+	text-indent: 2em;
+	padding-top: 20px;
+}
+/*about展示部分*/
+.exhibition .about {
+	width: 1200px;
+	height: 170px;
+	margin: 100px auto;
+	padding-top: 40px;
+	padding-bottom: 80px;
+	text-indent: 2em;
+	border-radius: 10px;
+}

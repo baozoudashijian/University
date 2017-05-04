@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>---景谷傣族彝族自治县云春茶厂-景谷傣族彝族自治县云春茶厂</title>
+	</head>
+	<style>
+		body {margin: 0;padding: 0;}
+		.box {
+			width: 100px;
+			height: 100px;
+			margin: 100px auto;
+			position: relative;
+			position: fixed;
+			top: 0;
+			right: 0;
+		}
+		.box span {
+			position: absolute;
+			display: block;
+			width: 60px;
+			height: 60px;
+			background: pink;
+			border-radius: 120px;
+			animation: scale 1s linear infinite;
+		}
+		.box .right {
+			right: 0;
+		}
+		.box .bottom {
+			border-radius: 0;
+			transform: rotate(45deg);
+			top: 18px;
+			left: 21px;
+		}
+		/*注意：。bottom在动画中也要转动45deg，由于上面是两个圆所以转动45deg没有什么影响*/
+		@keyframes scale{
+			from{
+				transform: scale(1) rotate(45deg);
+			}
+			to{
+				transform: scale(1.1) rotate(45deg);
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="css/same.css" />
+	<link rel="stylesheet" href="css/exhibition.css" />
+	<body>
+		<!--导航部分-->
+	<nav class="nav">
+		<!--导航左侧logo部分-->
+		<div class="nav-logo"><img src="img/logo.png"/></div>
+		<!--导航右边信息部分-->
+		<div class="nav-bar">
+			<ul>
+				<li><a href="http://127.0.0.1:8020/%E9%A1%B9%E7%9B%AE%E8%AE%BE%E8%AE%A1/index.html">首頁</a></li>
+				<li><a href="http://127.0.0.1:8020/%E9%A1%B9%E7%9B%AE%E8%AE%BE%E8%AE%A1/productpage1.html">產品中心</a></li>
+				<li><a href="http://127.0.0.1:8020/%E9%A1%B9%E7%9B%AE%E8%AE%BE%E8%AE%A1/flagshippage1.html">旗艦店</a></li>
+				<li><a href="http://127.0.0.1:8020/%E9%A1%B9%E7%9B%AE%E8%AE%BE%E8%AE%A1/coperationpage1.html">合作夥伴</a></li>
+				<li><a href="http://127.0.0.1:8020/%E9%A1%B9%E7%9B%AE%E8%AE%BE%E8%AE%A1/culturepage1.html">茶文化</a></li>
+				<li><a href="http://127.0.0.1:8020/%E9%A1%B9%E7%9B%AE%E8%AE%BE%E8%AE%A1/aboutpage1.html">走進雲春</a></li>
+				<li><a href="http://127.0.0.1:8020/%E9%A1%B9%E7%9B%AE%E8%AE%BE%E8%AE%A1/mappage1.html">聯系我們</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!--pbanner部分-->
+	<div class="pbanner">
+		<img src="img/pro.jpg" width="100%"/>
+		<div class="ptext">产品中心</div>
+	</div>
+	<!--sort部分(使用伸缩盒子布局)-->
+	<div class="sort">
+		<ul>
+			<li><a href="http://127.0.0.1:8020/%E9%A1%B9%E7%9B%AE%E8%AE%BE%E8%AE%A1/productpage1.html">生茶</a></li>
+			<li><a href="http://127.0.0.1:8020/%E9%A1%B9%E7%9B%AE%E8%AE%BE%E8%AE%A1/productpage2.html">熟茶</a></li>
+			<li><a href="http://127.0.0.1:8020/%E9%A1%B9%E7%9B%AE%E8%AE%BE%E8%AE%A1/productpage3.html">红茶</a></li>
+		</ul>
+	</div>
+	<!--商品展示区部分-->
+	<ul class="exhibition">
+		<li data-scroll-reveal="enter from the bottom after 0.1s" >
+			<div class="pic">
+				<img src="img/exhibition01.jpg"/>
+			</div>
+			<div class="price">
+				<a href="#">500g大白毫</a>
+				<p><span>零售价：</span>360.00元</p>
+			</div>
+		</li>
+		<li  data-scroll-reveal="enter from the bottom after 0.4s" >
+			<div class="pic">
+				<img src="img/exhibition02.jpg"/>
+			</div>
+			<div class="price">
+				<a href="#">大白茶芽</a>
+				<p><span>零售价：</span>360.00元</p>
+			</div>
+		</li>
+		<li  data-scroll-reveal="enter from the bottom after 0.7s" >
+			<div class="pic">
+				<img src="img/exhibition03.jpg"/>
+			</div>
+			<div class="price">
+				<a href="#">高山小沱</a>
+				<p><span>零售价：</span>208.00元</p>
+			</div>
+		</li>
+		<li  data-scroll-reveal="enter from the bottom after 1s" >
+			<div class="pic">
+				<img src="img/exhibition04.jpg"/>
+			</div>
+			<div class="price">
+				<a href="#">黄草坝小饼</a>
+				<p><span>零售价：</span>160.00元</p>
+			</div>
+		</li>
+		<li  data-scroll-reveal="enter from the bottom after 1.3s" >
+			<div class="pic">
+				<img src="img/exhibition05.jpg"/>
+			</div>
+			<div class="price">
+				<a href="#">精品1912</a>
+				<p><span>零售价：</span>199.00元</p>
+			</div>
+		</li>
+		<li  data-scroll-reveal="enter from the bottom after 1.6s" >
+			<div class="pic">
+				<img src="img/exhibition06.jpg"/>
+			</div>
+			<div class="price">
+				<a href="#">乔木古树</a>
+				<p><span>零售价：</span>60.00元</p>
+			</div>
+		</li>
+		<li  data-scroll-reveal="enter from the bottom after 1.9s" >
+			<div class="pic">
+				<img src="img/exhibition07.jpg"/>
+			</div>
+			<div class="price">
+				<a href="#">尚品1816</a>
+				<p><span>零售价：</span>360.00元</p>
+			</div>
+		</li>
+		<li  data-scroll-reveal="enter from the bottom after 2.2s" >
+			<div class="pic">
+				<img src="img/exhibition08.jpg"/>
+			</div>
+			<div class="price">
+				<a href="#">深山古茶200g</a>
+				<p><span>零售价：</span>260.00元</p>
+			</div>
+		</li>
+		<li  data-scroll-reveal="enter from the bottom after 2.5s" >
+			<div class="pic">
+				<img src="img/exhibition09.jpg"/>
+			</div>
+			<div class="price">
+				<a href="#">秧塔印记</a>
+				<p><span>零售价：</span>480.00元</p>
+			</div>
+		</li>
+		<li  data-scroll-reveal="enter from the bottom after 2.8s" >
+			<div class="pic">
+				<img src="img/exhibition10.jpg"/>
+			</div>
+			<div class="price">
+				<a href="#">月光百合(小沱)</a>
+				<p><span>零售价：</span>198.00元</p>
+			</div>
+		</li>
+		<li  data-scroll-reveal="enter from the bottom after 3.1s" >
+			<div class="pic">
+				<img src="img/exhibition11.jpg"/>
+			</div>
+			<div class="price">
+				<a href="#">臻品1518</a>
+				<p><span>零售价：</span>699.00元</p>
+			</div>
+		</li>
+		<li  data-scroll-reveal="enter from the bottom after 3.3s" >
+			<div class="pic">
+				<img src="img/exhibition12.jpg"/>
+			</div>
+			<div class="price">
+				<a href="#">珍品紫芽</a>
+				<p><span>零售价：</span>6.00元</p>
+			</div>
+		</li>
+	</ul>
+	<!--btn-bar部分-->
+	<div class="btn-bar">
+		<ul class="btn-container">
+			<li><a href="#">首页</a></li>
+			<li><a href="#">上一页</a></li>
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">...</a></li>
+			<li><a href="#">下一页</a></li>
+			<li><a href="#">末页</a></li>
+		</ul>
+	</div>
+	<!--connection区部分-->
+	<div class="connection">
+		<p>联系我们</p>
+		<h1>0879-5331229</h1>
+		<p>关注我们</p>
+		<ul>
+			<li><a href="#"><img src="img/share1.png"/></a></li>
+			<li><a href="#"><img src="img/share5.png"/></a></li>
+			<li><a href="#"><img src="img/share7.png"/></a></li>
+		</ul>
+	</div>
+	<!--footer区部分-->
+	<div class="footer">
+		<p>服務電話(86)0879 5331229　|　E-MAIL：247386073@qq.com Copyright © YUN CHUN TEA HOOUS .All Rights Reserved. 滇ICP备16006805号 中企动力技术支持</p>
+	</div>
+	<div class="box">
+			<span class="left"></span>
+			<span class="right"></span>
+			<span class="bottom"></span>
+		</div>
+	<script type="text/javascript" src="js/scrollReveal.js" ></script>
+	<script type="text/javascript">
+		window.scrollReveal = new scrollReveal();
+	</script>
+	</body>
+</html>

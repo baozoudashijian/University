@@ -1,0 +1,309 @@
+
+/*第一屏*/
+.first {
+	
+}
+.view {
+	width: 1920px;
+	height: 900px;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+.slider {
+	width: 1920px;
+	height: 900px;
+	margin-top: 100px auto;
+}
+.first li {
+	width: 64px;
+	height: 900px;
+	float: left;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: all 1s;
+}
+.first li span {
+	display: block;
+	width: 64px;
+	height: 900px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.first li span:nth-child(1) {
+	transform: translateZ(450px);
+	background: url(../img/01.jpg);
+}
+.first	li span:nth-child(2) {
+	transform: rotateX(90deg) translateZ(450px);
+	background: url(../img/02.jpg);
+}
+.first	li span:nth-child(3) {
+	transform: rotateX(180deg) translateZ(450px);
+	background: url(../img/01.jpg);
+}
+.first	li span:nth-child(4) {
+	transform: rotateX(270deg) translateZ(450px);
+	background: url(../img/02.jpg);
+}
+.first li:nth-child(1) span {
+	background-position: -64px 0;
+}
+.first li:nth-child(2) span {
+	background-position: -128px 0;
+}
+.first li:nth-child(3) span {
+	background-position: -192px 0;
+}
+.first li:nth-child(4) span {
+	background-position: -256px 0;
+}
+.first li:nth-child(5) span {
+	background-position: -320px 0;
+}
+.first li:nth-child(6) span {
+	background-position: -384px 0;
+}
+.first li:nth-child(7) span {
+	background-position: -448px 0;
+}
+.first li:nth-child(8) span {
+	background-position: -512px 0;
+}
+.first li:nth-child(9) span {
+	background-position: -576px 0;
+}
+.first li:nth-child(10) span {
+	background-position: -640px 0;
+}
+.first li:nth-child(11) span {
+	background-position: -704px 0;
+}
+.first li:nth-child(12) span {
+	background-position: -768px 0;
+}
+.first li:nth-child(13) span {
+	background-position: -832px 0;
+}
+.first li:nth-child(14) span {
+	background-position: -896px 0;
+}
+.first li:nth-child(15) span {
+	background-position: -960px 0;
+}
+.first li:nth-child(16) span {
+	background-position: -1024px 0;
+}
+.first li:nth-child(17) span {
+	background-position: -1088px 0;
+}
+.first li:nth-child(18) span {
+	background-position: -1152px 0;
+}
+.first li:nth-child(19) span {
+	background-position: -1216px 0;
+}
+.first li:nth-child(20) span {
+	background-position: -1280px 0;
+}
+.first li:nth-child(21) span {
+	background-position: -1344px 0;
+}
+.first li:nth-child(22) span {
+	background-position: -1408px 0;
+}
+.first li:nth-child(23) span {
+	background-position: -1472px 0;
+}
+.first li:nth-child(24) span {
+	background-position: -1536px 0;
+}
+.first li:nth-child(25) span {
+	background-position: -1600px 0;
+}
+.first li:nth-child(26) span {
+	background-position: -1664px 0;
+}
+.first li:nth-child(27) span {
+	background-position: -1728px 0;
+}
+.first li:nth-child(28) span {
+	background-position: -1792px 0;
+}
+.first li:nth-child(29) span {
+	background-position: -1856px 0;
+}
+.first li:nth-child(30) span {
+	background-position: -1920px 0;
+}
+/**第二屏**/
+.second {
+	background: url(../img/slider_home_1.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+.box {
+	width: 450px;
+	height: 350px;
+	position: absolute;
+	left: 45%;
+	top: 45%;
+}
+.box img {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.box .line {
+	width: 3px;
+	height: 350px;
+	background: white;
+	position: absolute;
+	left: 50%;
+	top: -435px;
+}
+.box .editor {
+	width: 400px;
+	height: 0;
+	position: absolute;
+	left: -435px;
+}
+.box .editor p {
+	display: block;
+	width: 30px;
+	height: 262px;
+	margin-top: 0;
+	padding: 10px 0;
+	margin-right: 0px;
+	margin-left: 35px;
+	margin-bottom: 10px;
+	font-size: 30px;
+	text-shadow: 1px 2px 1px #333;
+	font-weight: normal;
+	font-family: arial;
+	color: white;
+	letter-spacing: 1px;
+	float: left;
+	transition: all 2s linear;
+}
+.current .line {
+	transform: translate(0px,435px) rotate(360deg);
+	transition: all 1s ease-in-out;
+}
+.current .editor {
+	transform: translate(435px,0px) rotate(-360deg);
+	transition: all 1s ease-in-out;
+}
+.current img {
+	transition: all 1s ease-in-out;
+	animation: move 1s linear;
+}
+@keyframes move{
+	from{
+		transform: scale(1.1);
+		opacity: 0;
+	}
+	to{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+/***第三屏***/
+.third {
+	background: url(../img/slider_home_2.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+/***第四屏***/
+.fourth {
+	background: url(../img/slider_home_3.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+/***第五屏***/
+.fifth {
+	background: url(../img/slider_home_4.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+/***第六屏***/
+.sixth {
+	background: url(../img/slider_home_5.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+/***第七屏***/
+.seventh {
+	background: url(../img/slider_home_6.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+/***第八屏***/
+.eighth {
+	background: url(../img/slider_home_7.jpg) no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+.footer-text {
+	width: 750px;
+	height: 45px;
+	position: absolute;
+	left: 30%;
+	top: 30%;
+}
+.footer-text p {
+	margin: 0;
+	font-size: 30px;
+	line-height: 45px;
+	text-align: center;
+	color: rgba(255,255,255,0.5);
+	margin-bottom: 110px;
+}
+.tea {
+	width: 750px;
+	height: 246px;
+}
+.tea li {
+	width: 250px;
+	height: 246px;
+	float: left;
+	transition: all 1s;
+}
+.tea li:hover {
+	transform: rotate(360deg) scale(1.25);
+	outline:1px solid rgba(240,186,100,1);
+	background: rgba(240,186,100,0.5);
+}
+.tea li p {
+	display: block;
+	width: 30px;
+	height: 100px;
+	margin-left: 106px;
+	margin-top: 20px;
+}
+.tea .img {
+	margin-left: 65px;
+}
+.cooperate {
+	width: 100%;
+	height: 44px;
+	position: absolute;
+	bottom: 0;
+}
+.cooperate-container {
+	width: 1200px;
+	height: 44px;
+	margin: 0 auto;
+	border-top: 1px solid #b7a285;
+}
+.cooperate-container p {
+	font-size: 12px;
+	font-weight: normal;
+	color: rgba(255,255,255,0.4);
+}
+.cooperate-container .copyright-left {
+	float: left;
+}
+.cooperate-container .copyright-right {
+	float: right;
+}
