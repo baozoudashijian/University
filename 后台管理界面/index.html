@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/homePage.css"/>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div id="content">
+			<nav class="navbar navbar-inverse img-wall">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<h1>欢迎来到学生信息管理平台！</h1>
+					</div>
+					<div class="pull-right quit">
+						<a href="#" class="btn btn-warning">首页</a>
+						<a href="#" class="btn btn-primary">刷新</a>
+						<a href="#" class="btn btn-danger">修改密码</a>	
+						<a href="#" class="btn btn-success">安全退出</a>
+					</div>
+				</div>
+			</nav>
+			<section>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-2 worderCenter">
+							<div class="panel-group" id="accordion">
+							    <div class="panel panel-default">
+							        <div class="panel-heading">
+							            <h4 class="panel-title">
+							                <a class="full" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+							                	控件使用
+							                </a>
+							            </h4>
+							        </div>
+							        <div id="collapseOne" class="panel-collapse collapse">
+							            <div class="panel-body">
+							            	<a href="#">疯狂秀才</a>
+							            </div>
+							            <div class="panel-body">
+							            	<a href="#">用户管理</a>
+							            </div>
+							            <div class="panel-body">
+							            	<a href="#">角色管理</a>
+							            </div>
+							            <div class="panel-body">
+							            	<a href="#">权限管理</a>
+							            </div>
+							            <div class="panel-body">
+							            	<a href="#">系统日志</a>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-success">
+							        <div class="panel-heading">
+							            <h4 class="panel-title">
+							                <a class="full" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+							                	员工管理
+							                </a>
+							            </h4>
+							        </div>
+							        <div id="collapseTwo" class="panel-collapse collapse">
+							            <div class="panel-body">
+							            	<a href="#">员工列表</a>
+							            </div>
+							            <div class="panel-body">
+							            	<a href="#">视频监控</a>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-info">
+							        <div class="panel-heading">
+							            <h4 class="panel-title">
+							                <a class="full" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+							                	部门管理
+							                </a>
+							            </h4>
+							        </div>
+							        <div id="collapseThree" class="panel-collapse collapse">
+							            <div class="panel-body">
+							            	<a href="#">添加部门</a>
+							            </div>
+							            <div class="panel-body">
+							            	<a href="#">部门列表</a>
+							            </div>
+							            
+							        </div>
+							    </div>
+							    <div class="panel panel-warning">
+							        <div class="panel-heading">
+							            <h4 class="panel-title">
+							                <a class="full" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+							                	财务管理
+							                </a>
+							            </h4>
+							        </div>
+							        <div id="collapseFour" class="panel-collapse collapse">
+							            <div class="panel-body">
+							            	<a href="#">收支分类</a>
+							            </div>
+							            <div class="panel-body">
+							            	<a href="#">报表统计</a>
+							            </div>
+							            <div class="panel-body">
+							            	<a href="#">添加支出</a>
+							            </div>
+							        </div>
+							    </div>
+							    <div class="panel panel-primary">
+							        <div class="panel-heading">
+							            <h4 class="panel-title">
+							                <a class="full" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+							                	商城管理
+							                </a>
+							            </h4>
+							        </div>
+							        <div id="collapseFive" class="panel-collapse collapse">
+							            <div class="panel-body">
+							            	<a href="#">商品分类</a>
+							            </div>
+							            <div class="panel-body">
+							            	<a href="#">商品列表</a>
+							            </div>
+							            <div class="panel-body">
+							            	<a href="#">商品订单</a>
+							            </div>
+							        </div>
+							    </div>
+							</div>
+						</div>
+						<div class="col-md-10">
+							<table class="table">
+								<caption>当前用户：学生&nbsp;今天是2017年XX月XX年XXXX</caption>
+								    <thead>
+								    <tr>
+									    <th>学籍号</th>
+									    <th>姓名</th>
+									    <th>性别</th>
+									    <th>班级</th>
+									    <th>身份证号</th>
+									    <th>出生年月</th>
+									    <th>状态</th>
+									    <th>操作</th>
+								    </tr>
+								    </thead>
+								    <tbody>
+									    <tr class="active">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+									    <tr class="success">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+									    <tr class="warning">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+									    <tr class="danger">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+									    <tr class="active">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+									    <tr class="success">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+									    <tr class="warning">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+									    <tr class="danger">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+									    <tr class="active">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+									    <tr class="success">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+									    <tr class="warning">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+									    <tr class="danger">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+									    <tr class="active">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+									    <tr class="success">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+									    <tr class="warning">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+									    <tr class="danger">
+									      <td>150628120438</td>
+									      <td>张荣杰</td>
+									      <td>男</td>
+									      <td>15软件四班</td>
+									      <td>360281199610228976</td>
+									      <td>1996-09</td>
+									      <td>正常</td>
+									      <td>
+									      	<a href="#">查看</a>
+									      	<a href="#">修改</a>
+									      	<a href="#">删除</a>
+									      </td>
+									    </tr>
+								  </tbody>
+								</table>
+								<h5 style="color: #c00;" class="pull-left">共100条记录，每页13条记录</h5>
+								<ul class="pagination pull-right page">
+								    <li><a href="#">&laquo;</a></li>
+								    <li class="active"><a href="#">1</a></li>
+								    <li class="disabled"><a href="#">2</a></li>
+								    <li><a href="#">3</a></li>
+								    <li><a href="#">4</a></li>
+								    <li><a href="#">5</a></li>
+								    <li><a href="#">&raquo;</a></li>
+								</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="container-fluid">
+				<h3 style="color: #666;">地址：江西省南昌市昌东大学园区紫阳大道338号 邮政编码：330095 联系电话：0791-88384012 0791-88123818</h3>
+			</div>
+		</footer>
+	</body>
+</html>
