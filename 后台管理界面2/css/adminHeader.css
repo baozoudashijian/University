@@ -1,0 +1,79 @@
+html,body {
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.admin-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1500;
+	font-size: 1.4rem;
+	margin-bottom: 0;
+}
+.admin-main {
+	position: relative;
+	height: 100%;
+	padding-top: 51px;
+	background: #f3f3f3;
+}
+.admin-sliderbar {
+	display: block;
+	position: static;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 260px;
+	min-height: 100%;
+	float: left;
+	border-right: 1px solid #cecece;
+}
+.admin-offcanvas-bar {
+	width: auto;
+	position: static;
+	transform: translate3d(0,0,0);
+	overflow: hidden;
+	background: none;
+}
+.admin-sliderbar-list {
+	margin-bottom: 0;
+}
+.admin-sliderbar-list:first-child {
+	border-top: none;
+}
+.admin-sliderbar-list li a {
+	color: #5c5c5c;
+	padding-left: 24px;
+}
+.admin-sliderbar-sub {
+	margin-top: 0;
+	margin-bottom: 0;
+	box-shadow: 0 16px 8px -15px #e2e2e2 inset;
+	background: #ECECEC;
+	padding-left: 24px;
+}
+.admin-slider-panel {
+	margin: 10px;
+}
+.admin-content {
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	display: flex;
+	background: #FFFFFF;
+}
+.admin-content-body {
+	flex: 1 1 auto;/*茅舍顿开*/
+}
+.table-main {
+	font-size: 1.4rem;
+	padding: .5rem;
+}
+.admin-content-footer {
+	font-size: 85%;
+	color: #777;
+}
+.admin-icon-yellow {
+	color: gold;
+}
