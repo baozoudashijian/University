@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+</head>
+<style type="text/css">
+	body {
+		margin: 0;
+		padding: 0;
+		background: #222;
+		overflow: hidden;
+	}
+	#perspective {
+		
+	}
+	#wrap {
+		transform-style: preserve-3d;
+		width: 133px;
+		height: 200px;
+		/*border: 1px solid #c00;*/
+		margin: 150px auto;
+		position: relative;
+		transform: rotateX(-10deg);
+	}
+	#wrap img {
+		position: absolute;
+		top: 0;
+		-webkit-box-reflect: below 5px -webkit-linear-gradient(top ,rgba(0,0,0,0) 40%,rgba(0,0,0,0.5) 100%);
+	}
+</style>
+<body>
+	<div id="perspective">
+		<div id="wrap">
+			<img src="images/1.jpg" alt="" width="133" height="200" />
+			<img src="images/2.jpg" alt="" width="133" height="200" />
+			<img src="images/3.jpg" alt="" width="133" height="200" />
+			<img src="images/4.jpg" alt="" width="133" height="200" />
+			<img src="images/5.jpg" alt="" width="133" height="200" />
+			<img src="images/6.jpg" alt="" width="133" height="200" />
+			<img src="images/7.jpg" alt="" width="133" height="200" />
+			<img src="images/8.jpg" alt="" width="133" height="200" />
+			<img src="images/9.jpg" alt="" width="133" height="200" />
+			<img src="images/10.jpg" alt="" width="133" height="200" />
+			<img src="images/11.jpg" alt="" width="133" height="200" />
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	var oWrap = document.getElementById('wrap');
+	var oImg = document.getElementsByTagName('img');
+	var nowX,nowY,lastX,lastY,minusX,minusY,roX=0,roY=0,timer=0;
+	(function (i) {
+		var imgLen = oImg.length;
+		var deg = 360/imgLen;
+		for(; i<imgLen; i++) {
+			oImg[i].style.transform = "rotateY("+deg*i+"deg) translateZ(350px)";
+		}
+	})(0);
+	document.onmousedown = function (e) {/*鼠标按下发生的事件;*/
+		var e = e || window.event;
+		//第一次按下鼠标的最初的值
+		lastX = e.clientX;
+		lastY = e.clientY;
+		
+		this.onmousemove = function (e) {/*鼠标按下并且移动发生的事件;*/
+			var e = e || window.event;
+			//首次最后的值
+			nowX = e.clientX;
+			nowY = e.clientY;
+			//计算前后的差
+			minusX = nowX - lastX;
+			minusY = nowY - lastY;
+			//求旋转的度数
+			roY += minusX*0.2;/*按原来的旋转度数来的话度数太大*/
+			roX -= minusY*0.1;
+			//具体旋转的过程
+			oWrap.style.transform = "rotateX("+roX+"deg) rotateY("+roY+"deg)"; 
+			//用完之后变成之前的值
+			lastX = nowX;
+			lastY = nowY;
+			
+		}
+		this.onmouseup = function () {
+			/*鼠标按下弹起发生的事件,并且清除移动事件;*/
+			this.onmousemove = null;
+//			惯性的制作
+			timer = setInterval(function () {
+//				一个数值不断乘以0~的数会越来越小
+				minusX *=0.95;
+				minusY *=0.95;
+				roY += minusX *0.2;
+				roX += minusY *0.2;
+				oWrap.style.transform = "rotateX("+roX+"deg) rotateY("+roY+"deg)";
+				if(Math.abs(minusX) < 0.1 || Math.abs(minusY) <0.1) {
+					clearInterval(timer);
+				}
+			},1000/60)
+		}
+	}
+</script>
