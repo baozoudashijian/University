@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>梦幻弹窗特效</title>
+</head>
+<style type="text/css">
+	html,body {
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		width: 100%;
+		background: #333;
+		overflow: hidden;
+	}
+	#wrap {
+		width: 100%;
+		height: 100%;
+	}
+	#wrap div {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		transition: all 3s;
+		top: 0;
+		opacity: 0;
+	}
+	#wrap div:nth-child(1) {
+		opacity: 1;
+	}
+	#login {
+		width: 363px;
+		height: 375px;
+		position: absolute;
+		z-index: 999;
+		/*background: white;*/
+		left: 740px;
+		top: 240px;
+		overflow: hidden;
+	}
+	.login_container {
+		width: 343px;
+		height: 355px;
+		padding: 10px;
+	}
+	.login_container .center {
+		margin: 10px 48px;
+	}
+	.login_container .center input {
+		width: 250px;
+		height: 40px;
+		text-indent: 20px;
+		position: absolute;
+		top: -100px;
+	}
+</style>
+<body>
+	<div id="wrap">
+		<div><img src="images/1.jpg" width="100%" height="100%" /></div>
+		<div><img src="images/2.jpg" width="100%" height="100%" /></div>
+		<div><img src="images/3.jpg" width="100%" height="100%" /></div>
+	</div>
+	<div id="login">
+		<div class="login_container">
+			<form action="" method="post">
+				<div class="center">
+					<input type="text" name="" placeholder="UserName" class="move" />
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+<script>
+	//自己执行的匿名函数;IIFE(闭包)
+	(function () {
+		var timer = null;
+		var oImg = document.querySelectorAll('#wrap div');
+		var len = oImg.length;
+		var index = 0;
+		timer = setInterval(function () {
+			oImg[index].style.opacity = 0;
+			index++;
+			index%=len;
+		//这里的len=3;这里是取余
+			oImg[index].style.opacity = 1;
+		},5000)
+		
+	})();/*注意闭包的时候这里要加逗号,不然会报错*/
+	(function () {
+		var oMove = document.querySelector('.move');
+		var timer = null;
+		var end = 300;
+		var speed = 3;
+		timer = setInterval(function () {
+			speed += 3;
+			var T = oMove.offsetTop + speed;
+			if(T>300) {
+				T = end;
+				speed *= -1;
+				speed *= 0.5;
+			}
+			oMove.style.top = T+"px";
+		},20)
+	})()
+</script>
