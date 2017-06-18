@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>海报画廊</title>
+</head>
+<body>
+	<div class="wrap">
+		
+	</div>
+	<div class="wrap">
+		
+	</div>
+	<div class="wrap">
+	</div>
+	<div id="container"></div>
+</body>
+</html>
+<script>
+//	这个是选择器最底层,一般企业开发不会使用document.getElementById(),而是使用这种封装最底层的方法
+	function g(selector) {
+		/*封装过程是利用JavaScript中数组的substring方法,对所传的参数进行判断,通过判断第一个字符是不是"."如果是点的话就
+		使用获取类的方法,并继续使用substring方法将第一个获取的点去掉*/
+		return selector.substring(0,1) == '.' ? document.getElementsByClassName(selector.substring(1)) :
+		document.getElementById(selector.substring(1));
+	}
+	console.log(g('#container'));
+</script>

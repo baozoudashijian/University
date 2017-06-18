@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>random函数</title>
+</head>
+<body>
+	
+</body>
+</html>、
+<script>
+//	这个是封装一个,在一个范围内（范围有由自己给定)随机数
+	function random (range) {
+//		这里运用Math函数中的min属性,请range数组中第一个数,和第二个数中的最小值
+		var min = Math.min(range[0],range[1]);
+//		智力运用Math函数中的max属性,请range数组中的第一个数,和三个数中的最大值
+		var max = Math.max(range[0],range[2]);
+		var diff = max - min;
+		var number = Math.round(Math.random() * diff) + min;
+		console.log(number);
+		return number;
+//		这里需要注意,在return后面的东西是不会被执行的
+	}
+	random([1,50,30]);
+</script>

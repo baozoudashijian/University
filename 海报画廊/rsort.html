@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>sort</title>
+</head>
+<style type="text/css">
+	body {
+		background: #222;
+	}
+	#wrap {
+		width: 100%;
+		height: 438px;
+		background: #666;
+		margin-top: 150px;
+		display: flex;
+	}
+	.photo {
+		width: 310px;
+		height: 438px;
+		flex: 1;
+	}
+</style>
+<body>
+	<div id="wrap">
+		<div class="photo" id="photo_1">
+			<img src="images/pk1.png" width="310" height="438" alt="" />
+		</div>
+		<div class="photo" id="photo_2">
+			<img src="images/pk2.png" width="310" height="438" alt="" />
+		</div>
+		<div class="photo" id="photo_3">
+			<img src="images/pk3.png" width="310" height="438" alt="" />
+		</div>
+		<div class="photo" id="photo_4">
+			<img src="images/pk4.png" width="310" height="438" alt="" />
+		</div>
+		<div class="photo" id="photo_5">
+			<img src="images/pk5.png" width="310" height="438" alt="" />
+		</div>
+		<div class="photo" id="photo_6">
+			<img src="images/pk6.png" width="310" height="438" alt="" />
+		</div>
+	</div>
+</body>
+</html>
+<script>
+	//简单封装jquery的选择器;
+	function g(selector) {
+	//这里是运用JavaScript中数组的substring,根据对第一个字符的判断,来判断用什么方法获取
+		return selector.substring(0,1) == '.' ? document.getElementsByClassName(selector.substring(1)) : 
+		document.getElementById(selector.substring(1));
+	}
+	//设置自己给定范围的随机数
+	function random (ranage) {
+//		利用了Math函数的min方法，max方法，round方法，random方法
+		var min = Math.min(ranage[0],ranage[1]);
+		var max = Math.max(ranage[0],ranage[1]);
+		var diff = max - min;
+		var number = Math.round(Math.random() * diff) + min;
+		console.log(number);
+		return number;
+	}
+	//分类
+	function rsort (n) {
+//		首先调用封装的g获取body中的photo类
+		var _photo = g('.photo');
+//		创建一个数组来储存获取的对象
+		var photos = [];
+//		这里循环,然后使用数组中push的方法将循环的内容一个一个添加到数组中去
+		for(var i=0; i<_photo.length; i++) {
+			photos.push(_photo[i]);
+		}
+//		这里获取将要变大的那个div，通过字符串的拼接，巧妙的与随机数结合起来
+		var photo_scale = g('#photo_' + n);
+		/*这里就是加上这个
+		photo_scale.className += 'photo_scale';*/
+		photo_scale.style['transform'] = 'scale(1.3)'
+	}
+	rsort(random([1,6]));
+</script>
