@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>自定义弹窗特效</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+</head>
+<body>
+	<a class="defined" href="javascript:;">自定义弹窗插件</a>
+	
+</body>
+</html>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/dialog.js"></script>
+<script type="text/javascript">
+	$(".defined").click(function () {
+		$.dialog({
+			title:"张老师太帅了！！！",
+			content:"你确定要离开吗？",
+			callback: function () {
+//				alert("你好，世界！！！")
+			}
+		})
+	})
+</script>
+<!--该插件存在的问题
+1.点击按钮会一直生成弹窗,而我们只需要生成一个。
+2.点击确定按钮时，是不是按照我的这个方式去实现的
+3.添加.gray类的时候会报错/-->
