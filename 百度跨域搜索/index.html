@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>百度跨域搜索</title>
+</head>
+<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	.container {
+		width: 100%;
+		height: 100vh;
+		background: #ccc;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+	.container .search {
+		width: 100%;
+		height: 16vh;
+		display: flex;/*设置这是伸缩盒子*/
+		flex-direction: column;/*设置在什么方向上排列clounm纵向排列,row横向排列*/   /*设置方向*/
+		justify-content: center;/*居中*/                                            /*设置居中的具体*/
+		align-items: center; /*这个设置居中*/
+		background: #368;
+		position: relative;
+	}
+	.container .search input {
+		width: 80%;
+		height: 7vh;
+		border-radius: 10px;
+		border: 0;
+		outline: none;
+		text-indent: 1em;
+	}
+	.container .search i {
+		z-index: 999;
+		position: absolute;
+		display: block;
+		right: 11vw;
+		width: 15vw;
+		height: 15vw;
+		background-size: 100%;/*设置图片的大小,可以将图片的大小的等比缩放*/
+		background-image: url('images/search.png');
+	}
+	.content {
+		/*height: 84vh;*/
+	}
+	.content .left {
+		/*height: 100vh;*/
+		width: 100vw;
+		float: left;
+		/*background: seagreen;*/
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="search">
+			<input type="text" placeholder="请输入要查询的内容..."/>
+			<i id="search"></i>
+		</div>
+		<div class="content">
+			<div class="left"></div>
+		</div>
+	</div>
+</body>
+</html>
+<script src="js/jquery.min.js"></script>
+<script>
+	$(function () {
+		var oSearch = document.querySelector('.search');
+		var oBtn = document.querySelector('#search');
+		var oLeft = document.querySelector('.left');
+		
+		oBtn.onclick = function () {
+			oLeft.innerHTML = null;//清除contents中的内容
+			var keyd = document.querySelector('input');
+			var keyval = keyd.value;
+			console.log(keyval);
+			$.ajax({
+			type:"get",
+			url:"http://image.baidu.com/search/acjson?tn=resultjson_com&ipn=rj",
+			/*url:"https://image.baidu.com/search/index?tn",*/
+			data:{
+				pn:0,
+				rn:40,//设置传过来图片的个数
+				ie:'utf-8',
+				word:keyval//搜索关键字
+			},
+			dataType:'JSONP',//声明已jsonp的格式传输，json格式的会403
+			success:function (data) {
+				console.log(data);
+				var dataList = data.data;//在返回的对象中获得data数组
+				var len = dataList.length;
+				for (var i=0; i<len; i++) {
+					var oImg = document.createElement('img');
+					oImg.src = dataList[i].thumbURL;
+					zoom(oImg);
+				}
+			}
+			
+		});
+		//ToDo 图片自适应
+		function zoom (obj) {
+			obj.onload = function () {
+				var sW = oLeft.offsetWidth/2;//获取限定宽度
+				var iW = obj.offsetWidth;//图片原始宽度
+				var iH = obj.offsetHeight;//图片原始高度
+				var pH = iH/(iW/sW);//计算
+				var lH = oLeft.style.height;
+//				var rH = oRight.style.height;
+				obj.style.width = sW+"px";
+				obj.style.height = pH+"px";
+				oLeft.appendChild(obj);
+
+			}
+			
+			
+		}
+		}
+		
+		
+
+	})
+</script>
+<!--注意：1.判断图片高度，来左右排列图片//已解决，不分左右盒子的方式，直接通过css的方法挤下来；
+	然后将设定盒子的宽度除以二；初步实现左右排列效果
+			3.搜索一次后，然后删除在输入会没有效果-->
+				<!--已解决：应该是当contents有内容的时候，再次搜索不会覆盖上面的内容
+				我们只需要在下一次点击的时候清除contents里面的内容-->
+			
