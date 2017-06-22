@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>模仿百度搜索</title>
+</head>
+<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	html,body {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		/*background: #368;*/
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+		/*justify-content: center;*/
+		align-items: center;
+	}
+	ul {
+		list-style: none;
+	}
+	#wrap {
+		width: 640px;
+		height: 350px;
+		/*background: white;*/
+		display: flex;/*声明伸缩盒子*/
+		flex-direction: column;/*纵向排列*/
+	}
+	.picture {
+		flex: 1;
+		display: flex;/*设置该盒子为伸缩盒子*/
+		flex-direction: row;/*声明主轴方向row横向column纵向*/
+		justify-content: center;/*左右对齐*/
+		align-items: flex-end;/*在盒子底部*/
+	}
+	.form {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}
+	.form span {
+		flex: 1.2;
+	}
+	.form .content {
+		flex: 4;
+	}
+	#input {
+		width: 516px;
+		height: 22px;
+		outline: none;
+		padding: 9px 7px;
+		font-size: 16px/18px arial;
+		float: left;
+	}
+	#btn {
+		width: 106px;
+		height: 44px;
+		background: #3388FF;
+		color: white;
+		cursor: pointer;
+		font-size: 16px;
+		border: none;
+		float: left;
+	}
+	.content {
+		height: auto;
+		border: 1px solid #ccc;
+		border-top: none;
+		display: none;
+	}
+	.content li {
+		width: 624px;
+		padding: 0 8px;
+		cursor: default;
+	}
+	.content li a {
+		display: block;
+		width: 100%;
+		height: 100%;
+		text-decoration: none;
+		color: #000;
+		font-size: 14px arial;
+	}
+	.content li:hover {
+		background: #ccc;
+	}
+</style>
+<body>
+	<div id="wrap">
+		<div class="picture">
+			<a href="javascript:;">
+				<img src="images/baidu.png" width="270" height="129" alt=""/>
+			</a>
+		</div>
+		<form action="" method="post" class="form">
+			<span class="text">
+				<input type="text" value="" id="input"/>
+				<input type="button" id="btn" value="百度一下" />
+			</span>
+			<div class="content">
+				<ul>
+				</ul>
+			</div>
+			
+		</form>
+	</div>
+</body>
+</html>
+<script>
+	var oText = document.querySelector('#input');
+	var oContent = document.querySelector('.content');
+	var ul = document.querySelector('ul');
+	
+	oText.onkeyup = function () {
+		ul.innerHTML = null;
+		var val = oText.value;
+		val = val.replace('\s+', '');
+		/*if (val) {
+			oContent.style.display = "block"; 
+		}else{
+			oContent.style.display = "none";
+		}*/
+		oContent.style.display = val ? "block" : "none";
+		var sc = document.createElement('script');
+		sc.src = 'https:sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd='+val+'&json=1&p=3&sid=23363_1457_21088_21930_20929&req=2&csor=2&cb=zhangrongjie&_=1498011402973';
+		document.body.appendChild(sc);
+	}
+	function zhangrongjie (data) {
+		/*console.log(data);*///这里获取从百度传过来的数据
+		var dataArr = data.s;
+		var dataLen = dataArr.length;
+		for (var i=0; i<dataLen; i++) {
+			var oLis = document.createElement('li');
+			oLis.innerHTML = '<a href="https://www.baidu.com/s?wd='+dataArr[i]+'">'+dataArr[i]+'</a>';
+			ul.appendChild(oLis);
+		}
+		
+	}
+	
+	
+</script>
+<!--misson complete-->
+<!--存在的问题：空格也会弹出下面的盒子-->
